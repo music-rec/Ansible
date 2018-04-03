@@ -1,7 +1,0 @@
-- hosts: dev-Ads
-  tasks:
-   - name: Send test message
-     telegram:
-        token: "513434634:AAHhFY8i_vgavxEFI5cPfEro0_A1ore8gc4"
-        chat_id: 233570604
-        msg: "Done install Nginx for Hostname:{{ ansible_hostname}}"

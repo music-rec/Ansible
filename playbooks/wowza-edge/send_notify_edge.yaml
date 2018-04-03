@@ -1,8 +1,0 @@
-#- hosts: wowza-edge
-- hosts: wowza18
-  tasks:
-   - name: Send Notifications
-     telegram:
-        token: "513434634:AAHhFY8i_vgavxEFI5cPfEro0_A1ore8gc4"
-        chat_id: 233570604
-        msg: "Hostname: {{ ansible_hostname }} Error\nStatus Codes: {{ status }}"
