@@ -1,0 +1,7 @@
+- hosts: wowza18
+#- hosts: wowza-edge
+  tasks:
+  
+    - name: Uncomment file hosts
+      script: /etc/ansible/script/wowza-edge/uncomment.sh
+      changed_when: True

@@ -1,0 +1,13 @@
+- hosts: dev-Ads
+  tasks:
+    - name: Run Script monitor changed of file
+      script: /etc/ansible/script/nginx/diff.sh
+      register: file_name
+
+
+    - name: Send notify
+      telegram:
+        token: "513434634:AAHhFY8i_vgavxEFI5cPfEro0_A1ore8gc4"
+        chat_id: 233570604
+        msg: "Changed of configuaration file\n Hostname:{{ ansible_hostname }}\nUsername:  {{ ansible_user }}\nfileChange:  {{ file_name.stdout }} "
+
