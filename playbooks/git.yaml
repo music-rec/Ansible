@@ -1,0 +1,29 @@
+- hosts: local
+  vars_prompt:
+    - name: "git_commit"
+      prompt: "Git comment: "
+      private: no
+
+  tasks:
+    - name: Git commit
+      shell: |
+               git add .
+               git commit -m "{{git_commit}}"
+      args:
+        chdir: /etc/ansible/config
+
+    - name: Git Push
+      expect:
+        chdir: /etc/ansible/config
+        command: git push origin master
+        responses:
+          (?i)password: "xuanthanh1993"
+      changed_when: True
+
+    - name: Send test message
+      telegram:
+        token: "513434634:AAHhFY8i_vgavxEFI5cPfEro0_A1ore8gc4"
+        chat_id: 233570604
+        msg: " Done Git Push Config"
+
+

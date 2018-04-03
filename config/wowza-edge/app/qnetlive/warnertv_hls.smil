@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smil title="">
+    <head>
+    </head>
+    <body>
+        <switch>
+            <video src="warnertv_300.stream" system-bitrate="600000" width="320" height="240">
+                <param name="audioCodecId" value="mp4a.40.2" valuetype="data"/>
+                <param name="videoCodecId" value="avc1.66.30" valuetype="data"/>
+            </video>
+
+            <video src="warnertv_500.stream" system-bitrate="1300000" width="480" height="360">
+		<param name="audioCodecId" value="mp4a.40.2" valuetype="data"/>
+		<param name="videoCodecId" value="avc1.66.31" valuetype="data"/>
+	    </video>
+	
+	    <video src="warnertv_1000.stream" system-bitrate="1800000" width="640" height="480">
+		<param name="audioCodecId" value="mp4a.40.2" valuetype="data"/>
+		<param name="videoCodecId" value="avc1.77.31" valuetype="data"/>
+	    </video>	
+
+	    <video src="warnertv_2000.stream" system-bitrate="2500000" width="768" height="576">
+		<param name="audioCodecId" value="mp4a.40.2" valuetype="data"/>
+		<param name="videoCodecId" value="avc1.100.31" valuetype="data"/>
+	    </video>	
+        </switch>
+    </body>
+</smil>

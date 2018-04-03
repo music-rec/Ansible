@@ -1,0 +1,6 @@
+- hosts: dev-Ads
+  roles:
+     - jdauphant.nginx
+
+- import_playbook: /etc/ansible/playbooks/git.yaml
+

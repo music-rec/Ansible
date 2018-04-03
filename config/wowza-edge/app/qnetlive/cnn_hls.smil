@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smil title="">
+    <head>
+    </head>
+    <body>
+        <switch>
+            <video src="cnn_300.stream" system-bitrate="400000" width="320" height="180">
+                <param name="audioCodecId" value="mp4a.40.2" valuetype="data"/>
+                <param name="videoCodecId" value="avc1.66.30" valuetype="data"/>
+            </video>
+
+            <video src="cnn_500.stream" system-bitrate="650000" width="480" height="270">
+                <param name="audioCodecId" value="mp4a.40.2" valuetype="data"/>
+                <param name="videoCodecId" value="avc1.66.30" valuetype="data"/>
+            </video>
+
+            <video src="cnn_1000.stream" system-bitrate="1200000" width="640" height="360">
+                <param name="audioCodecId" value="mp4a.40.2" valuetype="data"/>
+                <param name="videoCodecId" value="avc1.77.31" valuetype="data"/>
+            </video>
+
+            <video src="cnn_2000.stream" system-bitrate="2500000" width="1024" height="576">
+                <param name="audioCodecId" value="mp4a.40.2" valuetype="data"/>
+                <param name="videoCodecId" value="avc1.100.40" valuetype="data"/>
+            </video>
+        </switch>
+    </body>
+</smil>
